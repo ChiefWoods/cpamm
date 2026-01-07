@@ -1,6 +1,6 @@
 import { PublicKey } from "@solana/web3.js";
 import { BN } from "@coral-xyz/anchor";
-import idl from "../target/idl/automated_market_maker.json";
+import idl from "../target/idl/cpamm.json";
 
 const AMM_PROGRAM_ID = new PublicKey(idl.address);
 

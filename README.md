@@ -2,7 +2,7 @@
 
 Constant product automated market maker for [Turbin3 Builders Cohort](https://turbin3.com/).
 
-[Source Repository](https://github.com/ChiefWoods/automated-market-maker)
+[Source Repository](https://github.com/ChiefWoods/cpamm)
 
 ## Built With
 
@@ -46,7 +46,7 @@ bun upgrade
 1. Clone the repository
 
 ```bash
-git clone https://github.com/ChiefWoods/automated-market-maker.git
+git clone https://github.com/ChiefWoods/cpamm.git
 ```
 
 2. Install all dependencies
@@ -92,12 +92,12 @@ anchor deploy
 3. Optionally initialize IDL
 
 ```bash
-anchor idl init -f target/idl/automated-market-maker.json <PROGRAM_ID>
+anchor idl init -f target/idl/cpamm.json <PROGRAM_ID>
 ```
 
 ## Issues
 
-View the [open issues](https://github.com/ChiefWoods/automated-market-maker/issues) for a full list of proposed features and known bugs.
+View the [open issues](https://github.com/ChiefWoods/cpamm/issues) for a full list of proposed features and known bugs.
 
 ## Acknowledgements
 

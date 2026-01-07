@@ -7,13 +7,13 @@ resolution = true
 skip-lint = false
 
 [programs.localnet]
-automated_market_maker = "C7f2vQaRdp8oJR5R9P86CKn48wQkEmgtdkEpjZy1MaAi"
+cpamm = "DM5TsT41u72k61MBc1EbirDJYEEtxN1npq78BgmuBKDK"
 
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "Localnet"
+cluster = "localnet"
 wallet = "~/.config/solana/id.json"
 
 [scripts]

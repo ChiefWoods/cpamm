@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, test } from "bun:test";
-import { AutomatedMarketMaker } from "../../target/types/automated_market_maker";
+import { Cpamm } from "../../target/types/cpamm";
 import { BN, Program } from "@coral-xyz/anchor";
 import { Keypair, LAMPORTS_PER_SOL, PublicKey } from "@solana/web3.js";
 import { randomBytes } from "crypto";
@@ -20,7 +20,7 @@ describe("withdraw", () => {
   let { litesvm, provider, program } = {} as {
     litesvm: LiteSVM;
     provider: LiteSVMProvider;
-    program: Program<AutomatedMarketMaker>;
+    program: Program<Cpamm>;
   };
 
   const [admin, user] = Array.from({ length: 2 }, Keypair.generate);

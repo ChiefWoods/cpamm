@@ -1,9 +1,9 @@
 import { PublicKey } from "@solana/web3.js";
-import { AutomatedMarketMaker } from "../target/types/automated_market_maker";
+import { Cpamm } from "../target/types/cpamm";
 import { Program } from "@coral-xyz/anchor";
 
 export async function fetchConfigAcc(
-  program: Program<AutomatedMarketMaker>,
+  program: Program<Cpamm>,
   configPda: PublicKey,
 ) {
   return await program.account.config.fetchNullable(configPda);

@@ -9,10 +9,10 @@ pub use constants::*;
 pub use instructions::*;
 pub use state::*;
 
-declare_id!("C7f2vQaRdp8oJR5R9P86CKn48wQkEmgtdkEpjZy1MaAi");
+declare_id!("DM5TsT41u72k61MBc1EbirDJYEEtxN1npq78BgmuBKDK");
 
 #[program]
-pub mod automated_market_maker {
+pub mod cpamm {
     use super::*;
 
     pub fn initialize(ctx: Context<Initialize>, args: InitializeArgs) -> Result<()> {

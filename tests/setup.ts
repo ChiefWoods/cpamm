@@ -1,6 +1,6 @@
 import { AnchorError, Program } from "@coral-xyz/anchor";
-import { AutomatedMarketMaker } from "../target/types/automated_market_maker";
-import idl from "../target/idl/automated_market_maker.json";
+import { Cpamm } from "../target/types/cpamm";
+import idl from "../target/idl/cpamm.json";
 import { MINT_SIZE, MintLayout, TOKEN_PROGRAM_ID } from "@solana/spl-token";
 import { LAMPORTS_PER_SOL, PublicKey, SystemProgram } from "@solana/web3.js";
 import { mintX, mintY } from "./constants";
@@ -71,7 +71,7 @@ export async function getSetup(
   }
 
   const provider = new LiteSVMProvider(litesvm);
-  const program = new Program<AutomatedMarketMaker>(idl, provider);
+  const program = new Program<Cpamm>(idl, provider);
 
   return { litesvm, provider, program };
 }
