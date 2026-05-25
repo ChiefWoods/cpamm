@@ -1,4 +1,4 @@
-# Automated Market Maker
+# CPAMM
 
 Constant product automated market maker for [Turbin3 Builders Cohort](https://turbin3.com/).
 
